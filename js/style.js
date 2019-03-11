@@ -4,18 +4,10 @@ var gameTable = ['X', null,'X','X','O','X','X',null,'X'];
 
 var draw = function(state){
     //to do (Завернуть в цикл)
+    var gameBlocks = document.getElementsByClassName('gameBlock');
 
-    document.getElementsByClassName('gameBlockLetter')[0].innerText = state[0];
-    document.getElementsByClassName('gameBlockLetter')[1].innerText = state[1];
-    document.getElementsByClassName('gameBlockLetter')[2].innerText = state[2];
-    document.getElementsByClassName('gameBlockLetter')[3].innerText = state[3];
-    document.getElementsByClassName('gameBlockLetter')[4].innerText = state[4];
-    document.getElementsByClassName('gameBlockLetter')[5].innerText = state[5];
-    document.getElementsByClassName('gameBlockLetter')[6].innerText = state[6];
-    document.getElementsByClassName('gameBlockLetter')[7].innerText = state[7];
-    document.getElementsByClassName('gameBlockLetter')[8].innerText = state[8];
-    for ( var i = 0; i < gameTable.length; i++){
-        
+    for ( var i = 0; i < gameBlocks.length; i++){
+        gameBlocks[i].innerText = state[i];
     }
 };
 
@@ -27,12 +19,17 @@ var onPageLoaded = function(){
 
 //    updateCards();
 
-    document.getElementById('gameBlocks').onclick = function(e){
-        console.log(this);
-        //Поменять gameTable в соответствии куда я попал (понять что за ID от 0 до 9) и туда вставить значение (X O)
+    var gameBlocks = document.getElementsByClassName('gameBlock');
 
-        draw(gameTable);
-    };
+    for (var i = 0; i < gameBlocks.length; i++){
+        gameBlocks[i].onclick = function(e){
+            e.target.innerText = 'X';
+            console.log(e);
+            //Поменять gameTable в соответствии куда я попал (понять что за ID от 0 до 9) и туда вставить значение (X O)
+
+            //draw(gameTable);
+        };
+    }
 
     draw(gameTable);
 
