@@ -173,10 +173,6 @@
     border: 1px solid darkblue;
 }
 
-.visible{
-    visibility:visible;
-}
-
 #modalResetGame{
     width:150px;
     height:30px;
@@ -184,13 +180,12 @@
     margin-top:6px;
 }
 
-
-/*Блокировка остального сайта*/
 .banBlocks {
     width:500px;
     height:500px;
     opacity: 0.4;
     z-index: 3;
+    pointer-events: none;
 }
 
 .banBody {
