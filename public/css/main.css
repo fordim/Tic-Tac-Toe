@@ -21,7 +21,7 @@
     height:100px;
     background-color:grey;
     text-align:center;
-    font-family:comic Sans Ms;
+    font-family:"comic Sans Ms", sans-serif;
     font-size:65px;
     color:yellow;
     border:3px solid darkblue;
@@ -46,7 +46,7 @@
     margin:0 auto;
     display:flex;
     flex-wrap:wrap;
-    font-family:comic Sans Ms;
+    font-family:"comic Sans Ms", sans-serif;
     font-size:70px;
 }
 
@@ -67,7 +67,7 @@
     color: white;
     width:200px;
     height:50px;
-    font-family:comic Sans Ms;
+    font-family:"comic Sans Ms", sans-serif;
     margin:0 auto;
 
     border: 1px solid darkblue;
@@ -93,7 +93,7 @@
     height:100px;
     background-color:grey;
     text-align:center;
-    font-family:comic Sans Ms;
+    font-family:"comic Sans Ms", sans-serif;
     font-size:65px;
     color:yellow;
     border:3px solid darkblue;
@@ -112,7 +112,7 @@
 
 .rightMain > p{
     margin: 0;
-    font-family:comic Sans Ms;
+    font-family:"comic Sans Ms", sans-serif;
 }
 
 .rightFooter{
@@ -125,7 +125,7 @@
     color: white;
     width:200px;
     height:50px;
-    font-family:comic Sans Ms;
+    font-family:"comic Sans Ms", sans-serif;
     margin:0 auto;
 
     border: 1px solid darkblue;
@@ -151,7 +151,7 @@
     position:absolute;
     margin-top:80px;
     margin-left:300px;
-    font-family:comic Sans Ms;
+    font-family:"comic Sans Ms", sans-serif;
     text-align:center;
 }
 
